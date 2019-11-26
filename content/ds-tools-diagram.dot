@@ -1,0 +1,26 @@
+digraph {
+    node [color="#bbbbbb" fontcolor="#bbbbbb"]
+    edge [color="#bbbbbb"]
+    rankdir=BT
+
+    Python -> "Data Science", "Software Development"
+    R -> "Data Science"
+    Excel -> "Data Science"
+    SQL -> "Data Science", Excel, Python, R
+
+    pandas -> Python, "Data Science", numpy
+    matplotlib -> Python, "Data Science"
+    seaborn -> pandas, matplotlib
+    "scikit-learn" -> Python, "Data Science"
+    numpy -> Python, "Data Science"
+    nltk -> Python, "Data Science"
+    "Apache Spark" -> Python, "Data Science", R
+    scipy -> Python, "Data Science"
+    statsmodels -> Python, "Data Science"
+
+    flask -> Python, "Software Development"
+    django -> Python, "Software Development"
+
+    Python, "Data Science", matplotlib, pandas, seaborn, "scikit-learn" [color="black" fontcolor="black"]
+
+}

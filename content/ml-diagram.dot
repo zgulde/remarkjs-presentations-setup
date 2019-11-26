@@ -1,0 +1,13 @@
+digraph {
+    rankdir=LR
+    node [shape="record"]
+
+    a [label="ML Model"]
+    p [label="Predictions (y)"]
+
+    x0 -> a
+    x1 -> a
+    x2 -> a
+
+    a -> p
+}
